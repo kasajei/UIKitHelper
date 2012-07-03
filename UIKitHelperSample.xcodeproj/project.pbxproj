@@ -20,6 +20,15 @@
 		9303CD5215A2AE1700C588F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9303CD3315A2AE1700C588F9 /* Foundation.framework */; };
 		9303CD5A15A2AE1700C588F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9303CD5815A2AE1700C588F9 /* InfoPlist.strings */; };
 		9303CD5D15A2AE1700C588F9 /* UIKitHelperSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD5C15A2AE1700C588F9 /* UIKitHelperSampleTests.m */; };
+		9303CD7815A2AE2900C588F9 /* NSMutableDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD6815A2AE2900C588F9 /* NSMutableDictionary+Helper.m */; };
+		9303CD7915A2AE2900C588F9 /* NSUserDefaults+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD6A15A2AE2900C588F9 /* NSUserDefaults+Helper.m */; };
+		9303CD7A15A2AE2900C588F9 /* UIButton+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD6C15A2AE2900C588F9 /* UIButton+Helper.m */; };
+		9303CD7B15A2AE2900C588F9 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD6E15A2AE2900C588F9 /* UIImage+Helper.m */; };
+		9303CD7C15A2AE2900C588F9 /* UIImageView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD7015A2AE2900C588F9 /* UIImageView+Helper.m */; };
+		9303CD7D15A2AE2900C588F9 /* UILabel+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD7315A2AE2900C588F9 /* UILabel+Helper.m */; };
+		9303CD7E15A2AE2900C588F9 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD7515A2AE2900C588F9 /* UIView+Helper.m */; };
+		9303CD7F15A2AE2900C588F9 /* UIWebView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD7715A2AE2900C588F9 /* UIWebView+Helper.m */; };
+		9303CD8215A2AEB000C588F9 /* UIViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9303CD8115A2AEB000C588F9 /* UIViewController+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +46,40 @@
 		9303CD3115A2AE1700C588F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9303CD3315A2AE1700C588F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9303CD3515A2AE1700C588F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9303CD3915A2AE1700C588F9 /* UIKitHelperSample-Info.plist */ = {isa = PBXFileReference; path = "UIKitHelperSample-Info.plist"; sourceTree = "<group>"; };
+		9303CD3915A2AE1700C588F9 /* UIKitHelperSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitHelperSample-Info.plist"; sourceTree = "<group>"; };
 		9303CD3B15A2AE1700C588F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9303CD3D15A2AE1700C588F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9303CD3F15A2AE1700C588F9 /* UIKitHelperSample-Prefix.pch */ = {isa = PBXFileReference; path = "UIKitHelperSample-Prefix.pch"; sourceTree = "<group>"; };
-		9303CD4015A2AE1700C588F9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9303CD3F15A2AE1700C588F9 /* UIKitHelperSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitHelperSample-Prefix.pch"; sourceTree = "<group>"; };
+		9303CD4015A2AE1700C588F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9303CD4115A2AE1700C588F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9303CD4315A2AE1700C588F9 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		9303CD4315A2AE1700C588F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9303CD4415A2AE1700C588F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9303CD4715A2AE1700C588F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		9303CD4E15A2AE1700C588F9 /* UIKitHelperSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitHelperSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9303CD4F15A2AE1700C588F9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9303CD5715A2AE1700C588F9 /* UIKitHelperSampleTests-Info.plist */ = {isa = PBXFileReference; path = "UIKitHelperSampleTests-Info.plist"; sourceTree = "<group>"; };
+		9303CD5715A2AE1700C588F9 /* UIKitHelperSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitHelperSampleTests-Info.plist"; sourceTree = "<group>"; };
 		9303CD5915A2AE1700C588F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9303CD5B15A2AE1700C588F9 /* UIKitHelperSampleTests.h */ = {isa = PBXFileReference; path = UIKitHelperSampleTests.h; sourceTree = "<group>"; };
+		9303CD5B15A2AE1700C588F9 /* UIKitHelperSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitHelperSampleTests.h; sourceTree = "<group>"; };
 		9303CD5C15A2AE1700C588F9 /* UIKitHelperSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitHelperSampleTests.m; sourceTree = "<group>"; };
+		9303CD6715A2AE2900C588F9 /* NSMutableDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Helper.h"; sourceTree = "<group>"; };
+		9303CD6815A2AE2900C588F9 /* NSMutableDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Helper.m"; sourceTree = "<group>"; };
+		9303CD6915A2AE2900C588F9 /* NSUserDefaults+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Helper.h"; sourceTree = "<group>"; };
+		9303CD6A15A2AE2900C588F9 /* NSUserDefaults+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Helper.m"; sourceTree = "<group>"; };
+		9303CD6B15A2AE2900C588F9 /* UIButton+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Helper.h"; sourceTree = "<group>"; };
+		9303CD6C15A2AE2900C588F9 /* UIButton+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Helper.m"; sourceTree = "<group>"; };
+		9303CD6D15A2AE2900C588F9 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
+		9303CD6E15A2AE2900C588F9 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
+		9303CD6F15A2AE2900C588F9 /* UIImageView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Helper.h"; sourceTree = "<group>"; };
+		9303CD7015A2AE2900C588F9 /* UIImageView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Helper.m"; sourceTree = "<group>"; };
+		9303CD7115A2AE2900C588F9 /* UIKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitHelper.h; sourceTree = "<group>"; };
+		9303CD7215A2AE2900C588F9 /* UILabel+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Helper.h"; sourceTree = "<group>"; };
+		9303CD7315A2AE2900C588F9 /* UILabel+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Helper.m"; sourceTree = "<group>"; };
+		9303CD7415A2AE2900C588F9 /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
+		9303CD7515A2AE2900C588F9 /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		9303CD7615A2AE2900C588F9 /* UIWebView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Helper.h"; sourceTree = "<group>"; };
+		9303CD7715A2AE2900C588F9 /* UIWebView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Helper.m"; sourceTree = "<group>"; };
+		9303CD8015A2AEB000C588F9 /* UIViewController+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helper.h"; sourceTree = "<group>"; };
+		9303CD8115A2AEB000C588F9 /* UIViewController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +139,7 @@
 		9303CD3715A2AE1700C588F9 /* UIKitHelperSample */ = {
 			isa = PBXGroup;
 			children = (
+				9303CD6615A2AE2900C588F9 /* UIKitHelper */,
 				9303CD4015A2AE1700C588F9 /* AppDelegate.h */,
 				9303CD4115A2AE1700C588F9 /* AppDelegate.m */,
 				9303CD4315A2AE1700C588F9 /* ViewController.h */,
@@ -150,6 +179,32 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		9303CD6615A2AE2900C588F9 /* UIKitHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9303CD6715A2AE2900C588F9 /* NSMutableDictionary+Helper.h */,
+				9303CD6815A2AE2900C588F9 /* NSMutableDictionary+Helper.m */,
+				9303CD6915A2AE2900C588F9 /* NSUserDefaults+Helper.h */,
+				9303CD6A15A2AE2900C588F9 /* NSUserDefaults+Helper.m */,
+				9303CD6B15A2AE2900C588F9 /* UIButton+Helper.h */,
+				9303CD6C15A2AE2900C588F9 /* UIButton+Helper.m */,
+				9303CD6D15A2AE2900C588F9 /* UIImage+Helper.h */,
+				9303CD6E15A2AE2900C588F9 /* UIImage+Helper.m */,
+				9303CD6F15A2AE2900C588F9 /* UIImageView+Helper.h */,
+				9303CD7015A2AE2900C588F9 /* UIImageView+Helper.m */,
+				9303CD7115A2AE2900C588F9 /* UIKitHelper.h */,
+				9303CD7215A2AE2900C588F9 /* UILabel+Helper.h */,
+				9303CD7315A2AE2900C588F9 /* UILabel+Helper.m */,
+				9303CD7415A2AE2900C588F9 /* UIView+Helper.h */,
+				9303CD7515A2AE2900C588F9 /* UIView+Helper.m */,
+				9303CD7615A2AE2900C588F9 /* UIWebView+Helper.h */,
+				9303CD7715A2AE2900C588F9 /* UIWebView+Helper.m */,
+				9303CD8015A2AEB000C588F9 /* UIViewController+Helper.h */,
+				9303CD8115A2AEB000C588F9 /* UIViewController+Helper.m */,
+			);
+			path = UIKitHelper;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -260,6 +315,15 @@
 				9303CD3E15A2AE1700C588F9 /* main.m in Sources */,
 				9303CD4215A2AE1700C588F9 /* AppDelegate.m in Sources */,
 				9303CD4515A2AE1700C588F9 /* ViewController.m in Sources */,
+				9303CD7815A2AE2900C588F9 /* NSMutableDictionary+Helper.m in Sources */,
+				9303CD7915A2AE2900C588F9 /* NSUserDefaults+Helper.m in Sources */,
+				9303CD7A15A2AE2900C588F9 /* UIButton+Helper.m in Sources */,
+				9303CD7B15A2AE2900C588F9 /* UIImage+Helper.m in Sources */,
+				9303CD7C15A2AE2900C588F9 /* UIImageView+Helper.m in Sources */,
+				9303CD7D15A2AE2900C588F9 /* UILabel+Helper.m in Sources */,
+				9303CD7E15A2AE2900C588F9 /* UIView+Helper.m in Sources */,
+				9303CD7F15A2AE2900C588F9 /* UIWebView+Helper.m in Sources */,
+				9303CD8215A2AEB000C588F9 /* UIViewController+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

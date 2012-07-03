@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIKitHelper.h"
 
 @interface ViewController ()
 
@@ -14,10 +15,12 @@
 
 @implementation ViewController
 
+#pragma mark LifeCycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self installButtonNamed:@"CameraBtn" inPosition:CGPointMake(100, 100)];
 }
 
 - (void)viewDidUnload
@@ -29,6 +32,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+#pragma mark PressBtn
+- (void)pressCameraBtn:(id)sender{
+    NSLog(@"CameraBtn");
 }
 
 @end
