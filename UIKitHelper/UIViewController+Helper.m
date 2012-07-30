@@ -10,6 +10,7 @@
 #import "UIButton+Helper.h"
 #import "UIView+Helper.h"
 #import "UIImageView+Helper.h"
+#import "UILabel+Helper.h"
 
 @implementation UIViewController (Helper)
 - (UIButton *)installAlphaButtonName:(NSString*)name size:(CGSize)size inPosition:(CGPoint)position{
@@ -31,5 +32,12 @@
     [imageView setPosition:position];
     [self.view addSubview:imageView];
     return imageView;
+}
+
+- (UILabel *)installLabelWithText:(NSString *)text inPosition:(CGPoint)position{
+    UILabel *label = [UILabel labelWithText:text];
+    [label setPosition:position];
+    [self.view addSubview:label];
+    return label;
 }
 @end

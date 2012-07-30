@@ -1,16 +1,21 @@
 //
-//  UIViewController+Helper.h
-//  UIKitHelperSample
+//  UIView+Helper.h
+//  PFSample
 //
-//  Created by Yasuo Kasajima on 12/07/03.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Created by Kasajima Yasuo on 12/03/04.
+//  Copyright (c) 2012年 kyoto. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (Helper)
+@interface UIView (Helper)
+-(void)setPosition:(CGPoint)pos;
+-(void)setSize:(CGSize)size;
+- (void)setScale:(double)scale;
+
 - (UIButton *)installAlphaButtonName:(NSString*)name size:(CGSize)size inPosition:(CGPoint)position;
 - (UIButton *)installButtonNamed:(NSString*)named inPosition:(CGPoint)position;
 - (UIImageView *)installImageViewWithFileName:(NSString *)fileName inPosition:(CGPoint)position;
-- (UILabel *)installLabelWithText:(NSString *)text inPosition:(CGPoint)position;
+
+- (NSComparisonResult) compareTag:(UIView*)view;
 @end
