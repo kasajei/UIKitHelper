@@ -13,6 +13,7 @@
     CGImageRef cgImage = CGImageCreateWithImageInRect(self.CGImage, rect);
     UIImage *img = [UIImage imageWithCGImage:cgImage];
     CGImageRelease(cgImage);
+	
     return img;
 }
 
