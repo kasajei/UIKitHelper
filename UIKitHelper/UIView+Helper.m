@@ -53,6 +53,13 @@
     return imageView;
 }
 
+- (UIImageView *)installImageViewWithImage:(UIImage *)image inPosition:(CGPoint)position{
+    UIImageView *imageView = [UIImageView imageViewWithImage:image];
+    [imageView setPosition:position];
+    [self addSubview:imageView];
+    return imageView;
+}
+
 // タグを小さい順番に並べる
 - (NSComparisonResult) compareTag:(UIView *)view{  
     if (self.tag > view.tag) {  

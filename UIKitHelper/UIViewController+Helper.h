@@ -12,5 +12,6 @@
 - (UIButton *)installAlphaButtonName:(NSString*)name size:(CGSize)size inPosition:(CGPoint)position;
 - (UIButton *)installButtonNamed:(NSString*)named inPosition:(CGPoint)position;
 - (UIImageView *)installImageViewWithFileName:(NSString *)fileName inPosition:(CGPoint)position;
+- (UIImageView *)installImageViewWithImage:(UIImage *)image inPosition:(CGPoint)position;
 - (UILabel *)installLabelWithText:(NSString *)text inPosition:(CGPoint)position;
 @end

@@ -34,6 +34,13 @@
     return imageView;
 }
 
+- (UIImageView *)installImageViewWithImage:(UIImage *)image inPosition:(CGPoint)position{
+    UIImageView *imageView = [UIImageView imageViewWithImage:image];
+    [imageView setPosition:position];
+    [self.view addSubview:imageView];
+    return imageView;
+}
+
 - (UILabel *)installLabelWithText:(NSString *)text inPosition:(CGPoint)position{
     UILabel *label = [UILabel labelWithText:text];
     [label setPosition:position];
