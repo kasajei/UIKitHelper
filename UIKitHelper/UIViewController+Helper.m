@@ -20,8 +20,22 @@
     return btn;
 }
 
+- (UIButton *)installAlphaButtonName:(NSString*)name target:(id)target size:(CGSize)size inPosition:(CGPoint)position{
+    UIButton *btn = [UIButton buttonAlphaWithName:name size:size withDelegate:target];
+    [btn setPosition:position];
+    [self.view addSubview:btn];
+    return btn;
+}
+
 - (UIButton *)installButtonNamed:(NSString*)named inPosition:(CGPoint)position{
     UIButton *btn = [UIButton buttonWithImageFileName:named withDelagete:self];
+    [btn setPosition:position];
+    [self.view addSubview:btn];
+    return btn;
+}
+
+- (UIButton *)installButtonNamed:(NSString*)named target:(id)target inPosition:(CGPoint)position{
+    UIButton *btn = [UIButton buttonWithImageFileName:named withDelagete:target];
     [btn setPosition:position];
     [self.view addSubview:btn];
     return btn;

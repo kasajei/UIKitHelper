@@ -14,7 +14,9 @@
 - (void)setScale:(double)scale;
 
 - (UIButton *)installAlphaButtonName:(NSString*)name size:(CGSize)size inPosition:(CGPoint)position;
+- (UIButton *)installAlphaButtonName:(NSString*)name target:(id)target size:(CGSize)size inPosition:(CGPoint)position;
 - (UIButton *)installButtonNamed:(NSString*)named inPosition:(CGPoint)position;
+- (UIButton *)installButtonNamed:(NSString*)named target:(id)target inPosition:(CGPoint)position;
 - (UIImageView *)installImageViewWithFileName:(NSString *)fileName inPosition:(CGPoint)position;
 - (UIImageView *)installImageViewWithImage:(UIImage *)image inPosition:(CGPoint)position;
 
