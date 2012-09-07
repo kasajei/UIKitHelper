@@ -13,4 +13,7 @@
 + (UIImage *)colorImage:(UIImage *)img withColor:(UIColor *)color;
 + (UIImage *)imageNamed:(NSString *)name withColor:(UIColor *)color;
 + (UIImage *)imageLocalizedNamed:(NSString *)name withColor:(UIColor *)color;
+
+- (UIImage *)cropImageInRect:(CGRect )rect;
+- (UIImage *)resizeImageToWidth:(float )width;
 @end

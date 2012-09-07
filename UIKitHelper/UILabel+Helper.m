@@ -29,7 +29,7 @@
     label.adjustsFontSizeToFitWidth = YES;
     label.minimumFontSize = 10;
     
-    return [label autorelease];
+    return label;
 }
 
 - (void)reSize{

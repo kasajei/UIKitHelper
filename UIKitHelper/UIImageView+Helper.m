@@ -12,7 +12,7 @@
 @implementation UIImageView (Helper)
 
 +(UIImageView*)imageViewWithImage:(UIImage*)image{
-    UIImageView *imageView = [[[UIImageView alloc] initWithImage:image] autorelease];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     CGRect frame = imageView.frame;
     frame.size.width = image.size.width * 0.5;
     frame.size.height = image.size.height * 0.5;

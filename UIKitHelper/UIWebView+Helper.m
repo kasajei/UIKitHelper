@@ -10,9 +10,8 @@
 
 @implementation UIWebView (Helper)
 - (void)loadURLString:(NSString*)URLString{
-    NSString *encodedUrl = (NSString *) CFURLCreateStringByAddingPercentEscapes (NULL, (CFStringRef) URLString, NULL, NULL,kCFStringEncodingUTF8);
+    NSString *encodedUrl = (__bridge NSString *) CFURLCreateStringByAddingPercentEscapes (NULL, (__bridge CFStringRef) URLString, NULL, NULL,kCFStringEncodingUTF8);
     NSURL *url = [NSURL URLWithString:encodedUrl];
-    [encodedUrl release];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [self loadRequest:req];
 }
