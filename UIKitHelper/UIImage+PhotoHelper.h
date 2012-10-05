@@ -11,4 +11,5 @@
 @interface UIImage (PhotoHelper)
 - (UIImage*)cropImageInRect:(CGRect)rect;
 - (UIImage *)resizeImageToWidth:(float )width;
+- (UIImage *)resizeImageToWidth:(float )width height:(float)height;
 @end

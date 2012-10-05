@@ -30,4 +30,18 @@
     UIGraphicsEndImageContext();
     return resizedImage;
 }
+
+- (UIImage *)resizeImageToWidth:(float )width height:(float)height{
+    CGSize reSize;
+    CGSize imageSize = self.size;
+    reSize = CGSizeMake(width, imageSize.height*(width/imageSize.width));
+    
+    //リサイズ
+    UIGraphicsBeginImageContext(reSize);
+    
+    [self drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage* resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
+}
 @end
