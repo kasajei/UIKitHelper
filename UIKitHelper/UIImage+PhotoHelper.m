@@ -33,8 +33,7 @@
 
 - (UIImage *)resizeImageToWidth:(float )width height:(float)height{
     CGSize reSize;
-    CGSize imageSize = self.size;
-    reSize = CGSizeMake(width, imageSize.height*(width/imageSize.width));
+    reSize = CGSizeMake(width, height);
     
     //リサイズ
     UIGraphicsBeginImageContext(reSize);
