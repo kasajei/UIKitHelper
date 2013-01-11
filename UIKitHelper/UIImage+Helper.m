@@ -102,5 +102,41 @@
     return resizedImage;
 }
 
+- (UIImage *) rotateImage:(UIImage *)img angle:(int)angle
+{
+    CGImageRef imgRef = [img CGImage];
+    CGContextRef context;
+    
+    switch (angle) {
+        case 90:
+            UIGraphicsBeginImageContext(CGSizeMake(img.size.height, img.size.width));
+            context = UIGraphicsGetCurrentContext();
+            CGContextTranslateCTM(context, img.size.height, img.size.width);
+            CGContextScaleCTM(context, 1.0, -1.0);
+            CGContextRotateCTM(context, M_PI/2.0);
+            break;
+        case 180:
+            UIGraphicsBeginImageContext(CGSizeMake(img.size.width, img.size.height));
+            context = UIGraphicsGetCurrentContext();
+            CGContextTranslateCTM(context, img.size.width, 0);
+            CGContextScaleCTM(context, 1.0, -1.0);
+            CGContextRotateCTM(context, -M_PI);
+            break;
+        case 270:
+            UIGraphicsBeginImageContext(CGSizeMake(img.size.height, img.size.width));
+            context = UIGraphicsGetCurrentContext();
+            CGContextScaleCTM(context, 1.0, -1.0);
+            CGContextRotateCTM(context, -M_PI/2.0);
+            break;
+        default:
+            NSLog(@"90, 180, 270度のみの対応です");
+            return nil;
+    }
+    CGContextDrawImage(context, CGRectMake(0, 0, img.size.width, img.size.height), imgRef);
+    UIImage *resultImg = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return resultImg;
+}
 
 @end

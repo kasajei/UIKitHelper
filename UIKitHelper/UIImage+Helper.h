@@ -16,4 +16,5 @@
 
 - (UIImage *)cropImageInRect:(CGRect )rect;
 - (UIImage *)resizeImageToWidth:(float )width;
+- (UIImage *) rotateImage:(UIImage *)img angle:(int)angle;
 @end
