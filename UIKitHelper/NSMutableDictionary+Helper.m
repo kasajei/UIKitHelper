@@ -42,6 +42,14 @@
     return [[self valueForKey:key] longLongValue];
 }
 
+- (void)setBool:(BOOL)value forKey:(NSString *)key{
+    [self setValue:[NSNumber numberWithBool:value] forKey:key];
+}
+
+- (BOOL)boolForKey:(NSString *)key{
+    return [[self valueForKey:key] boolValue];
+}
+
 
 
 @end
