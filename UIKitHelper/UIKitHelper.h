@@ -11,6 +11,7 @@
 #import "UILabel+Helper.h"
 #import "UIButton+Helper.h"
 #import "NSMutableDictionary+Helper.h"
+#import "NSDictionary+Helper.h"
 #import "UIImageView+Helper.h"
 #import "NSUserDefaults+Helper.h"
 #import "UIWebView+Helper.h"
