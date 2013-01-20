@@ -32,4 +32,10 @@
     return imageView;
 }
 
+- (void) maskImageViewWithMask:(UIImage *)maskImage {
+    UIImage *maskedImage = [self.image maskImage:self.image withMask:maskImage];
+    [self setImage:maskedImage];
+}
+
+
 @end

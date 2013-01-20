@@ -12,4 +12,5 @@
 +(UIImageView*)imageViewWithImage:(UIImage*)image;
 +(UIImageView*)imageViewWithFileName:(NSString*)fileName;
 +(UIImageView*)imageViewWithFileName:(NSString*)fileName withColor:(UIColor*)color;
+- (void) maskImageViewWithMask:(UIImage *)maskImage;
 @end
